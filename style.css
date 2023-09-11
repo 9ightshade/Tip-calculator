@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    /*### Primary*/
+
+    --Strong-cyan: hsl(172, 67%, 45%);
+
+    /*### Neutral*/
+
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+body {
+    background: var(--Light-grayish-cyan);
+    font: 24px;
+    font-family: "Space Mono", "sans-serif";
+}
+#header-title {
+    text-align: center;
+    color: var(--Very-dark-cyan);
+    font-family: "Space Mono", "sans-serif";
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+form {
+    background: var(--White);
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+    border-radius: 10px;
+    margin: auto;
+    padding: 2rem;
+
+}
+.main-div1 {
+    width: 25vw;
+    background: var(--White);
+    padding: 10px;
+    border-radius: 8px;
+}
+.main-div2 {
+    background: var(--Very-dark-cyan);
+    font-family: "Space Mono", "sans-serif";
+    width: 25vw;
+    padding: 20px;
+    border-radius: 8px;
+}
+.generic {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.generic p {
+    color: var(--White);
+    font-size: 20px;
+}
+.generic p span {
+    color: var(--Dark-grayish-cyan);
+    font-size: 16px;
+}
+.generic h2 {
+    color: var(--Strong-cyan);
+    cursor: pointer;
+}
+input[type="reset"] {
+    background: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+    font-weight: 600;
+    text-align: center;
+    width: 20vw;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 50px;
+    transition: all;
+    transition-duration: 0.6s;
+}
+input[type="reset"]:hover {
+    background: rgb(30, 116, 116);
+    color: var(--Very-dark-cyan);
+}
+
+.top-div label {
+    color: var(--Very-dark-cyan);
+    margin-left: 10px;
+}
+.top-div div input {
+    color: var(--Very-dark-cyan);
+    text-align: right;
+    border-radius: 8px;
+    background: url(images/icon-dollar.svg), var(--Light-grayish-cyan);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    border: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 90%;
+    box-shadow: 2px 2px 15px;
+}
+
+.middle-div {
+    height: 50%;
+    padding: 10px;
+    color: var(--Grayish-cyan);
+    margin-top: 10px;
+}
+.middle-div label {
+    color: var(--Very-dark-cyan);
+}
+.middle-div button {
+    text-align: center;
+    font-weight: 700;
+    color: var(--White);
+    padding: 10px;
+    width: 28%;
+    margin-top: 10px;
+    margin-right: 5px;
+    background: var(--Very-dark-cyan);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all;
+    transition-duration: 0.6s;
+}
+.middle-div button:hover {
+    background: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+}
+input[type="number"] {
+    background: var(--Very-light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+    width: 30%;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Space Mono", "sans-serif";
+}
+input[type="number"]:active {
+    border: none;
+}
+
+.bottom-div label {
+    color: var(--Very-dark-cyan);
+    margin-left: 10px;
+}
+.bottom-div div input {
+    color: var(--Very-dark-cyan);
+    text-align: right;
+    border-radius: 8px;
+    background: url(images/icon-person.svg), var(--Light-grayish-cyan);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    border: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 90%;
+    box-shadow: 2px 2px 15px;
+}

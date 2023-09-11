@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Tip calculator app</title>
+</head>
+
+<body>
+  <h1 id="header-title"> SPLI<br />TTER </h1>
+  <div class="main-container">
+    <form id="form">
+
+
+      <div class="main-div1">
+        <div class="top-div">
+          <label for="bill-input">Bill </label>
+          <div>
+            <input type="number" class="billinput" placeholder="0" required />
+          </div>
+        </div>
+
+
+        <div class="middle-div">
+          <label for="select-tip">Select Tip &#37;</label>
+          <div>
+            <!-- <input type="button" value="5%" placeholder="5%" class="percent-tip" />
+            <input type="button" value="10%" placeholder="10%" class="percent-tip" />
+            <input type="button" value="15%" placeholder="15%" class="percent-tip" /> -->
+            <button><span class="percent-tip">5</span>%</button>
+            <button><span class="percent-tip">10</span>%</button>
+            <button><span class="percent-tip">15</span>%</button>
+          </div>
+          <div>
+            <button><span class="percent-tip">25</span>%</button>
+            <button><span class="percent-tip">50</span>%</button>
+            <input type="number" placeholder="Custom" class="custom-tip" />
+
+            <!-- <input type="button" value="25%" placeholder="25%" class="percent-tip" />
+            <input type="button" value="50%" placeholder="50%" class="percent-tip" />
+            <input type="number" value="#" placeholder="Custom" class="percent-tip" /> -->
+          </div>
+        </div>
+
+
+        <div class="bottom-div">
+          <label for="No-of-People">Number of People</label>
+          <div>
+            <input type="number" placeholder="0" class="people" required />
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="main-div2">
+        <div class="generic">
+          <p>Tip Amount<br />
+            <span>/ person</span>
+          </p>
+          <h2> &dollar;<span class="tipdollar">0.00</span></h2>
+        </div>
+
+
+        <div class="generic">
+          <p>Total <br />
+            <span>/ person</span>
+          </p>
+          <h2> &dollar;<span class="totaldollar">0.00</span></h2>
+        </div>
+
+
+        <input type="reset" value="RESET" id="reset-btn" class="reset-btns" />
+      </div>
+    </form>
+  </div>
+  <script src="apps.js"></script>
+  <!-- <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+      href="#">9ightshade</a>
+  </div>-->
+</body>
+
+</html>
