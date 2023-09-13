@@ -12,24 +12,15 @@ let tipPercent;
 let totalPerPerson;
 //functions
 console.log(billVar.value);
-console.log(percentVar);
-// for (let i = 0; i < percentVar.length; i++) {
-//     console.log(percentVar[i].textContent);
-// }
-
-// document.addEventListener("keydown", (e) => {
-//     console.log(typeof(e.key));
-//     if (e.key == "Escape") {
-//         console.log("escape key press");
-//     }
-// });
+console.log(percentVar.innerHTML);
 
 percentVar.forEach((percentVar) => {
     percentVar.addEventListener("click", (e) => {
         e.preventDefault();
         if (peopleVar.value >= 1 && billVar.value >= 1) {
             console.log(billVar.value);
-            tipPercent = Number(percentVar.textContent) / 100;
+            tipPercent =
+                Number(percentVar.querySelector("span").textContent) / 100;
             tipCalc = (tipPercent * billVar.value) / peopleVar.value;
             console.log((tipDollarVar.textContent = tipCalc.toFixed(2)));
 
@@ -76,5 +67,3 @@ document.addEventListener("keydown", (e) => {
         totalDollarVar.textContent = "0.00";
     }
 });
-
-//javascript behind the scenes
